@@ -393,15 +393,15 @@ Full list of input field emamples and sections.
 
 1. `add_filter( 'hd_postbox_api_save_button_text', 'function_name' );`
 
-	Callback arguemnts : `$button_text`
+	Callback arguments : `$button_text`
 
 2. `add_filter( 'hd_postbox_api_sanitize_option', 'function_name' );`
 
-	Callback arguemnts : `$new_value`, `$field`, `$setting`
+	Callback arguments : `$new_value`, `$field`, `$setting`
 
 3. `add_filter( 'hd_html_helper_input_field', 'function_name' );`
 
-	Callback arguemnts : `$input_html`, `$field`, `$show_help`
+	Callback arguments : `$input_html`, `$field`, `$show_help`
 
 
 Note: where `function_name` is a callback function
@@ -409,6 +409,6 @@ Note: where `function_name` is a callback function
 Please post your suggetions and requests in issues, and also help me to imrpove this documenration.
 
 
-Thank You
--- _Harish Dasari_
+Thank You <br/>
+-- _Harish Dasari_ <br/>
 [@harishdasari](http://twitter.com/harishdasari)
