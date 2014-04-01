@@ -1,7 +1,9 @@
 
 ##WordPress Postbox API Wrapper Class
 
-Createing Option pages with Postboxes for WordPress is now hassel free. With this PHP class you can create Top level menu pages and sub menu pages.
+_**Note: This is not a WordPress Plugin. This is a PHP Library for creating option pages for WordPress themes and plugins.**_
+
+Creating Option pages with Postboxes for WordPress is now hassel free. With this PHP class you can create Top level menu pages and sub menu pages.
 
 This class uses WordPress native Settings API and Postboxes API and can be used in both Themes and Plugins.
 
@@ -19,6 +21,11 @@ You can add 10 different types of Input fields and Section.
 9. Color
 10. Editor
 
+###Screenshot
+
+![WP Postbox API Screenshot](https://raw.github.com/harishdasari/WP-Postbox-API-Wrapper-Class/master/screenshot.png)
+
+
 ###Installation
 Copy the Directory `hd-wp-postbox-api` into your theme or plugin folder.
 
@@ -29,11 +36,11 @@ Include the following code in your theme `functions.php` file or plugin file.
 ###Usage
 First you need to create
 
-1. Options for Menu Page
-2. Input fields array
-3. Initializing Settings API Class using above options.
+1. Defining options for Menu Page
+2. Defining input fields array
+3. Initializing Postbox API Class using above options.
 
-####Creating Options for Menu Page
+####Defining Options for Menu Page
 To create a top level menu page use following
 
 	$example_options = array(
@@ -61,7 +68,7 @@ To Create a sub menu page use following
 		'max_columns' => 4,                      // Maximum number of columns that user can set
 	);
 
-####Creating Input Field Options
+####Defining Input Field Options
 Creating Postboxes and Input fields are easy and all should define in one single array. First we need to define postbox options and then inpit field options.
 The input field options underneath the postbox option array will go into that postbox. Let's see how to define field options.
 
@@ -97,6 +104,11 @@ Now add **input** field options and give unique `option name` as key.
 	);
 
 Now add the other input fields you want. but make sure the array key should be unique.
+
+####Initialize
+Initialize Postbox Class using above defined menu options and fields.
+
+	$example_postbox = new HD_WP_Postbox_API( $example_options, $example_fields );
 
 
 Full list of input field emamples and sections.
@@ -406,9 +418,14 @@ Full list of input field emamples and sections.
 
 Note: where `function_name` is a callback function
 
-Please post your suggetions and requests in issues, and also help me to imrpove this documenration.
+###License
+GNU General Public License v2.0 or later | [http://www.opensource.org/licenses/gpl-license.php](http://www.opensource.org/licenses/gpl-license.php)
 
+<hr/>
+
+Please post your suggetions and requests in issues, and also help me to imrpove this documenration.
 
 Thank You <br/>
 -- _Harish Dasari_ <br/>
 [@harishdasari](http://twitter.com/harishdasari)
+
